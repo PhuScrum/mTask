@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity implements BottomSheetDialog
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        setTitle("mTask");
+        setTitle("ListView");
         btnCreateTask = findViewById(R.id.fabCreateTask);
 
         lvTaskList = (ListView) findViewById(R.id.lvTaskList);
