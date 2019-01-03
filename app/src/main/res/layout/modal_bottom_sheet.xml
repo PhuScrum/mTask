@@ -11,39 +11,82 @@
         android:layout_width="wrap_content"
 
         android:layout_height="wrap_content"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="148dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:text="Create"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtTaskName_Input" />
+        app:layout_constraintTop_toBottomOf="@+id/btnSetTime_Input" />
 
     <Button
         android:id="@+id/btnCancel_MDS"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="76dp"
-        android:layout_marginEnd="36dp"
-        android:layout_marginRight="36dp"
+        android:layout_marginTop="148dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
         android:text="Cancel"
         app:layout_constraintEnd_toStartOf="@+id/btnCreateTask_MDS"
-        app:layout_constraintTop_toBottomOf="@+id/edtTaskName_Input" />
+        app:layout_constraintTop_toBottomOf="@+id/btnSetDate_Input" />
 
     <EditText
         android:id="@+id/edtTaskName_Input"
         android:layout_width="0dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:hint="@string/what_task_is_on_your_mind"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtTaskDescription_Input"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:hint="@string/what_task_is_on_your_mind"
+        android:hint="Task description"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.273"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/edtTaskName_Input" />
+
+    <Button
+        android:id="@+id/btnSetDate_Input"
+        android:layout_width="81dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:text="Date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtTaskDescription_Input" />
+
+    <Button
+        android:id="@+id/btnSetTime_Input"
+        android:layout_width="81dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.963"
+        app:layout_constraintStart_toEndOf="@+id/btnSetDate_Input"
+        app:layout_constraintTop_toBottomOf="@+id/edtTaskDescription_Input"
+        />
 
 
 </android.support.constraint.ConstraintLayout>
